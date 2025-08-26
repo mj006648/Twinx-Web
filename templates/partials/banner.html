@@ -1,0 +1,18 @@
+{% if config.extra.quote or config.extra.site_description %}
+  <div class="bg-cover bg-center text-white shadow-md" style="background-image: url('/img/twin-banner2.jpg');">
+    <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-left">
+      <div>
+        {% if config.extra.quote and config.extra.quote.text %}
+          <div class="mb-4">
+            <h1 class="font-bold">{{ config.extra.quote.text }}</h1>
+          </div>
+        {% endif %}
+        {% if config.extra.site_description %}
+          <div>
+            <h2 class="font-normal">{{ config.extra.site_description }}</h2>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,26 @@
+<footer>
+  <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center">
+
+    <!-- Contact Us 정보 -->
+    <div class="mt-8 text-center text-sm text-gray-500">
+        <p class="font-bold text-base">Contact Us</p>
+        <p>
+            대한민국 광주광역시 북구 첨단과기로 123 (오룡동, 광주과학기술원)<br>
+            AI대학원 (AI Graduate School), S7동 101호
+        </p>
+        <p>
+            <a href="mailto:ich664f8@smartx.kr" class="text-blue-600 hover:text-blue-400">ich6648@smartx.kr</a>
+        </p>
+    </div>
+
+    <!-- 저작권 정보 -->
+    {% if config.extra.copyright %}
+    <div class="mt-4">
+      <p class="text-center text-base leading-6 text-gray-400">
+        {{ config.extra.copyright | replace(from="{year}", to=now() | date(format="%Y")) }}
+      </p>
+    </div>
+    {% endif %}
+
+  </div>
+</footer>

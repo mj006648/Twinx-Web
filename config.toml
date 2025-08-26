@@ -1,0 +1,75 @@
+# The URL the site will be built for
+base_url = "https://twinx.dreamai.kr/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# The default language ("de" also included in i18n directory)
+default_language = "en"
+
+# The site theme to use
+# theme = "zolarwind"
+
+# When set to "true", a search index is built from the pages and section content for `default_language`
+build_search_index = false
+
+# When set to "true", a feed is automatically generated
+generate_feeds = true
+
+# The taxonomies to use for the site
+taxonomies = [
+    { name = "tags", paginate_by = 6, feed = true},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "1337"
+
+# If Zola does not support the language you want to highlight, add additional syntax in this directory
+extra_syntaxes_and_themes=["syntaxes"]
+
+[extra]
+# Put all your custom variables here
+
+# The litle of the blog
+title = "TwinX"
+
+# Path to the language resource files
+path_language_resources = "i18n/"
+
+# The variables after this line are optional
+
+# The generator used for generating the static website
+generator = "Zola v0.19.2"
+
+# Favicon as SVG graphics
+favicon_svg = "/img/yin-yang.svg"
+
+# The copyright notice
+copyright = "© {2025} NetAI. All rights reserved."
+
+# The description shown on banner
+site_description ="GIST AI 융합학과의 디지털트윈 클러스터를 통해 미래를 위한 지능형 통합관제를 지원"
+
+# The quote shown on banner
+quote = { text = "Welcom to TwinX!" }
+
+# The main navigation menu
+menu_pages = [
+    { title = "About", url = "/pages/about/"   },
+    { title = "Dream-AI", url = "https://dreamai.kr/" },
+    { title = "ScaleX", url = "https://scalex.dreamai.kr/" },
+    { title = "MobileX", url = "https://mobilex.kr/" },
+    { title = "DataX", url = "https://datax.dreamai.kr/" },
+    { title = "AutoX", url = "https://autox.dreamai.kr/" },
+    { title = "NetAI", url = "https://netai.smartx.kr/" },
+    { title = "GitHub", url = "https://github.com/SmartX-Team" },
+]
+
+# The pages that appear in the footer
+footer_pages = []
+
+# Social links
+social_links = []
